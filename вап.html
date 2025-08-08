@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мой сайт-визитка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 30px;
+    }
+    h1 {
+      margin-top: 15px;
+      font-size: 36px;
+    }
+    p {
+      max-width: 500px;
+      padding: 0 15px;
+    }
+    a.button {
+      background-color: #fff;
+      color: #1f4037;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      margin: 20px 0;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #ddd;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .skills, .portfolio {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .skills div, .portfolio div {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .skills, .portfolio { padding: 0 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://i.imgur.com/0y0y0y0.png" alt="Фото">
+  <h1>Твоё Имя</h1>
+  <p>Привет! Я начинающий веб-разработчик. Создаю простые и красивые сайты. Люблю учиться новому и развиваться в IT.</p>
+  <a href="https://instagram.com" target="_blank" class="button">Мой Instagram</a>
+
+  <div class="section">
+    <h2>🛠️ Навыки</h2>
+    <div class="skills">
+      <div>HTML — хорошее знание</div>
+      <div>CSS — уверенное владение</div>
+      <div>JavaScript — базовый уровень</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📁 Примеры работ</h2>
+    <div class="portfolio">
+      <div>🌐 Лендинг для кофейни (макет)</div>
+      <div>📱 Адаптивный сайт-визитка</div>
+      <div>🖼️ Галерея фото с эффектами</div>
+    </div>
+  </div>
+
+  <div style="margin: 50px 0;"></div>
+
+</body>
+</html>
